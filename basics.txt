@@ -102,16 +102,16 @@ Docker Desktop:
 
 > Pull the hello-world image and run it
 
-Build docker image: docker build -t flask-docker-demo
+Build docker image: docker build -t flask-docker-demo .
 
-Run the container: docker run -p 5000:5000 flask-docker-demo
+Run the container: docker run -p 5000:5000 mlops-docker-demo
 
-Tag your image: docker tag flask-docker-demo govin-raaj/flask-docker-demo:latest1
+Tag your image: docker tag mlops-docker-demo govin-raaj/mlops-docker-demo:latest
 
 Assure that you're logged in: docker login
 
-Push image to dockerhub: docker push govin-raaj/flask-docker-demo:latest
+Push image to dockerhub: docker push govinraaj/mlops-docker-demo:latest
 
-Pull image from dockerhub: docker pull govin-raaj/flask-docker-demo:latest
+Pull image from dockerhub: docker pull govinraaj/mlops-docker-demo:latest
 
-Run the Pulled image: docker run -p 5000:5000 govin-raaj/flask-docker-demo:latest1
+Run the Pulled image: docker run -p 5000:5000 govin-raaj/mlops-docker-demo:latest1
